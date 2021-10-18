@@ -1,8 +1,6 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
-const Schema = mongoose.Schema;
-
-const icecreamSchema = newSchema(
+const icecreamSchema = mongoose.Schema(
   {
     flavor: { type: String, required: true },
     description: { type: String, required: true },
@@ -15,4 +13,4 @@ const icecreamSchema = newSchema(
 
 const Icecream = mongoose.model("Icecream", icecreamSchema);
 
-module.exports = Icecream;
+export default Icecream;
