@@ -1,5 +1,4 @@
-import mongoose from "mongoose";
-
+const mongoose = require("mongoose");
 const icecreamSchema = mongoose.Schema(
   {
     flavor: { type: String, required: true },
@@ -12,5 +11,3 @@ const icecreamSchema = mongoose.Schema(
 );
 
 const Icecream = mongoose.model("Icecream", icecreamSchema);
-
-export default Icecream;
